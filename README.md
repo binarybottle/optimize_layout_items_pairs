@@ -1,8 +1,9 @@
-# Software for optimizing item-to-position layouts
+# Software for optimizing items and pairs in item-to-position layouts
 
-Optimize layouts of items and item-pairs with advanced single- and multi-objective algorithms.
+Optimize layouts of items and item-pairs with single- and multi-objective algorithms.
+See [optimize_layouts](https://github.com/binarybottle/optimize_layouts.git) for more general MOO approach.
 
-**Repository**: https://github.com/binarybottle/optimize_layouts.git  
+**Repository**: https://github.com/binarybottle/optimize_layout_items_pairs.git  
 **Author**: Arno Klein (arnoklein.info)  
 **License**: MIT License (see LICENSE)
 
