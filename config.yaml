@@ -1,0 +1,39 @@
+# optimize_layouts/config.yaml
+# Configuration file for item-to-position layout optimization.
+
+#-----------------------------------------------------------------------
+# Paths (raw input files can be anywhere)
+#-----------------------------------------------------------------------
+paths:
+  input:
+    raw_item_scores_file:          "input/frequency/english-letter-counts-leipzig.csv"
+    raw_item_pair_scores_file:     "input/frequency/english-letter-pair-counts-leipzig.csv"
+    raw_position_scores_file:      "input/comfort/key-comfort-scores.csv"
+    raw_position_pair_scores_file: "input/comfort/key-pair-comfort-scores.csv"
+  output:
+    layout_results_folder:         "output/layouts"
+
+#-----------------------------------------------------------------------
+# Optimization settings
+#
+# Example keyboard optimization problem:
+#   Items (letters by frequency):    etaoin srhldc umfpgw ybvkxj
+#   Positions (keys by preference):  FDESVR JKILMU WOA;C, QPZ/X.
+#-----------------------------------------------------------------------
+# _to_assign:    Items to arrange in available positions
+# _assigned:     Items already assigned to positions
+# _to_constrain: Subset of items_to_assign to arrange in positions_to_constrain,
+#                and subset of positions_to_assign to constrain items_to_constrain
+optimization:   
+  items_to_assign:      "etaoinsrhl"
+  positions_to_assign:  "FDESVRJKIL"
+  items_assigned:       ""   
+  positions_assigned:   ""  
+  items_to_constrain:      ""   
+  positions_to_constrain:  ""  
+
+#-----------------------------------------------------------------------
+# Visualization settings
+#-----------------------------------------------------------------------
+visualization: 
+  print_keyboard: False
